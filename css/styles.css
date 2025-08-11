@@ -491,6 +491,10 @@ section {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: transparent;
     padding-left: 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em; 
+    color: #ffffff;
     outline: none;
     transition-property: border-color;
     transition-duration: 250ms;
@@ -502,7 +506,7 @@ section {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: white;
+    color: #ffffff; 
 }
 
 .footer-email-input:hover,
@@ -564,7 +568,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    max-height: 584px;
+    min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -587,12 +591,12 @@ section {
     justify-content: center;
     border-radius: 50%;
     background-color: #E7E9FC;
-    border-color: 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
     width: 24px;
     height: 24px;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewiew-popup-btn:hover,
@@ -755,7 +759,9 @@ section {
 .form-button-submit:focus {
     background-color: #404BBF;
 }
-#field-privacy:checked + .form-label > .form-custom-checkbox {
-    fill: #404BBF;
+
+.field-privacy:checked + .form-label > .form-custom-checkbox {
+    background-color: #404BBF;
     border: none; 
+    fill:#F4F4FD;
 }
